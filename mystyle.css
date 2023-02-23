@@ -1,0 +1,435 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #feede6;
+    font-size: 1rem;
+}
+
+.menu {
+    background-color: #303030;
+    overflow: hidden;
+}
+
+.menu a{
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.menu a:hover {
+    background-color: #424242;
+    color: white;
+}
+
+.menu a.active{
+    background-color: #111111;
+    color: white;
+    display: block;
+}
+
+.menu .icon {
+    display: block;
+    float: right;
+}
+
+.menu .icon i{
+    color: white;
+}
+
+.menu.responsive{
+    position: relative;
+}
+.menu.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.menu.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+
+header img{
+    width: 100%;
+    height: auto;
+    border-bottom: 6px solid #323232;
+}
+
+a{
+    text-decoration: none;
+    color: #cd5700;
+}
+
+.title{
+    position: relative;
+}
+
+.title div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+}
+
+.title img{
+    min-width: 100%;
+    height: auto;
+}
+
+.title h1{
+    font-size: 2vw;
+    font-family: fantasy;
+    text-align: center;
+    padding: 5px 5px;
+    text-shadow: -8px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    border-radius: 90px;
+    border: 1px solid rgba(000, 0, 0, 0.6);
+    background-color: rgba(000, 0, 0, 0.6);
+    margin-bottom: 10px;
+    color: #d1cdcb;
+}
+
+.title h3{
+    font-size: 1vw;
+    font-family: fantasy;
+    text-align: center;
+    padding: 5px 5px;
+    text-shadow: -8px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    border-radius: 90px;
+    border: 1px solid rgba(000, 0, 0, 0.6);
+    background-color: rgba(000, 0, 0, 0.6);
+    margin-bottom: 10px;
+    color: #d1cdcb;
+}
+
+.myButton {
+	box-shadow: 0px 0px 0px 2px #343536;
+	background:linear-gradient(to bottom, #737373 5%, #010203 100%);
+	background-color:#737373;
+	border-radius:10px;
+	border:1px solid #04070f;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:19px;
+	padding:12px 37px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #040812;
+}
+
+.myButton:hover {
+	background:linear-gradient(to bottom, #010203 5%, #737373 100%);
+	background-color:#010203;
+}
+
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.main-content{
+    width: 40%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.main-content img{
+    max-width: 100%;
+    height: auto;
+
+}
+
+#center{
+    display: flex;
+    justify-content: center;
+}
+
+.mytext{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+}
+
+.mytext p{
+    padding: 20px;
+}
+
+.main{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.main-info{
+    background-color: rgba(110, 115, 116, 0.8);
+    color: white;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+    margin: 0 auto 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+
+.main-info p{
+    text-align: center;
+    padding: 20px;
+}
+
+
+.ais{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.aipic{
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    margin: 0 auto 30px;
+}
+
+.aipic img{
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    height: auto;
+}
+
+.donkeyImg {
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    height: auto;
+}
+
+
+.container input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.container input[type=submit] {
+    background-color: #cd7600;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container {
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+@media (min-width: 440px) {
+    .title h1{
+        font-size: 2rem;
+    }
+
+    .title h3{
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .title h1, h3{
+        margin-bottom: 20px;
+    }
+
+    .title h1{
+        font-size: 3rem;
+    }
+
+    .title h3{
+        font-size: 2rem;
+    }
+
+
+    .container{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    body{
+        font-size: 1.3rem;
+    }
+
+    .ais{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .aipic{
+        display: inline-block;
+        width: 45%;
+    }
+
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .main-info{
+        width: 45%;
+        margin: 20px auto;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .menu .icon{
+        display: none;
+    }
+
+    .menu a{
+        display: block;
+    }
+
+    .title h1, h3{
+        margin-bottom: 35px;
+    }
+
+    .title h1{
+        font-size: 4rem;
+    }
+
+    .title h3{
+        font-size: 3rem;
+    }
+
+    .container{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .info{
+        margin-left: 7px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    body{
+        font-size: 1.7rem;
+    }
+
+    .ais{
+        width: 85%;
+    }
+
+    #iButton{
+        width: 35%;
+    }
+
+    .main {
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;
+    }
+}
+
+@media (min-width: 992px) {
+    .title h1{
+        font-size: 5rem;
+    }
+
+    .title h3{
+        font-size: 3.6rem;
+    }
+
+    .info{
+        margin-left: 10px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    .onas .kafelek{
+        width: 45%;
+        margin: auto auto;
+    }
+
+    .article-row{
+        display: flex;
+        margin: 30px auto;
+    }
+
+    .article-row:nth-child(2n+1) {
+        flex-direction: row-reverse;
+    }
+
+    .kafelek hr{
+        margin-bottom: 30px;
+    }
+
+    .ais{
+        width: 80%;
+    }
+
+    .aipic{
+        width: 32%;
+    }
+
+    #iButton{
+        font-size: 2rem;
+        width: 30%;
+        height: 70px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .title h1{
+        font-size: 7rem;
+    }
+
+    .title h3{
+        font-size: 6rem;
+    }
+
+    .title div{
+        top: 45%;
+    }
+
+    .info{
+        margin-left: 20px;
+    }
+
+    .kafelek hr{
+        margin-bottom: 50px;
+    }
+
+    .ais{
+        width: 75%;
+    }
+
+    .aipic{
+        width: 24%;
+    }
+
+}
